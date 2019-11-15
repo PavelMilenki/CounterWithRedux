@@ -1,0 +1,149 @@
+.App {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 30% 40% 30%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #1b3f48;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.maxCount {
+    color: red;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+    border: 2px solid aqua;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 10px;
+}
+
+.count {
+
+    border: 2px solid aqua;
+    margin: 10px;
+    border-radius: 10px;
+    color: aqua;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid aqua;
+    margin: 10px;
+    border-radius: 10px;
+    color: aqua;
+
+}
+
+.button {
+    background: aqua;
+    text-decoration: none;
+    margin: 15px;
+    outline: none;
+    border: 2px solid #1b3f48;
+    border-radius: 6px;
+    color: #1b3f48;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.button:active {
+    top: 4px;
+    background: white;
+}
+
+.button:hover:not(:active) {
+    background: darkcyan;
+}
+
+.button:disabled {
+    background: darkcyan;
+}
+
+.text {
+    font-size: 30px;
+}
+
+.value {
+    display: grid;
+    grid-template-areas: "a  c" "b  d ";
+    grid-template-columns: 60% 30%;
+    grid-template-rows: 50% 50%;
+
+}
+
+.textStart {
+    grid-area: a;
+    margin: 15px;
+    font-size: 30px;
+
+}
+
+.textMax {
+    grid-area: b;
+    margin: 15px;
+    font-size: 30px;
+}
+
+.inputStart {
+    grid-area: c;
+    margin: 15px;
+    border: 3px solid aqua;
+    border-radius: 6px;
+    text-decoration: none;
+    outline: none;
+    color: #1b3f48;
+    text-align: center;
+    font-size: 25px;
+}
+
+.inputMax {
+    grid-area: d;
+    margin: 15px;
+    border: 3px solid aqua;
+    border-radius: 6px;
+    outline: none;
+    text-decoration: none;
+    color: #1b3f48;
+    text-align: center;
+    font-size: 25px;
+}
+
+.inputStartError {
+    background-color: red;
+    border: 3px solid orangered;
+    grid-area: c;
+    margin: 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    outline: none;
+    color: #1b3f48;
+    text-align: center;
+    font-size: 25px;
+}
+
+.inputMaxError {
+    background-color: red;
+    border: 3px solid orangered;
+    grid-area: d;
+    margin: 15px;
+    border-radius: 6px;
+    outline: none;
+    text-decoration: none;
+    color: #1b3f48;
+    text-align: center;
+    font-size: 25px;
+}

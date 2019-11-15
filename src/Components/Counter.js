@@ -10,15 +10,6 @@ export const Counter = (props) => {
 
     const [editMode, setEditMode] = useState(false);
 
-    // const restoreState = () => {
-    //     let state = state;
-    //     let stateAsString = localStorage.getItem("our-state");
-    //     if (stateAsString != null) {
-    //         state = JSON.parse(stateAsString);
-    //         this.setState(state)
-    //     }
-    // };
-
     const displayEditMode = () => {
         setEditMode(false)
     };

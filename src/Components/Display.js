@@ -14,19 +14,13 @@ export const Display = (props) => {
                        maxCount={props.maxCount}/>
             </div>
             <div className={s.buttons}>
-                <div>
-                    <Button onClickFunc={props.incrementCount}
-                            disabled={disabledForInc}
-                            title={'Inc'}/>
-                </div>
-                <div>
-                    <Button onClickFunc={props.resCount}
-                            title={'Reset'}/>
-                </div>
-                <div>
-                    <Button onClickFunc={props.displayEditMode}
-                            title={'Set'}/>
-                </div>
+                <Button onClickFunc={props.incrementCount}
+                        disabled={disabledForInc}
+                        title={'Inc'}/>
+                <Button onClickFunc={props.resCount}
+                        title={'Reset'}/>
+                <Button onClickFunc={props.displayEditMode}
+                        title={'Set'}/>
             </div>
         </div>
     );

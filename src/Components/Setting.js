@@ -16,11 +16,11 @@ export const Setting = (props) => {
                        handlerChangeMaxCount={props.handlerChangeMaxCount}/>
             </div>
             < div className={s.buttons}>
-                <div>
+
                     <Button onClickFunc={props.settingEditMode}
                             disabled={disabledForSet}
                             title={'Set'}/>
-                </div>
+
             </div>
         </div>
     );

@@ -33,20 +33,19 @@ const reducer = (state = initialState, action) => {
     return state
 };
 
-export const incrementCountAC = () => {
+export const incrementCount = () => {
     return {type: INC_COUNT}
 };
 
-export const resCountAC = (newStartCount) => {
-
+export const resCount = (newStartCount) => {
     return {type: RES_COUNT, newStartCount}
 };
 
-export const startCountAC = (newStartCount) => {
+export const startCount = (newStartCount) => {
     return {type: START_COUNT, newStartCount}
 };
 
-export const maxCountAC = (newMaxCount) => {
+export const maxCount = (newMaxCount) => {
     return {type: MAX_COUNT, newMaxCount}
 };
 
